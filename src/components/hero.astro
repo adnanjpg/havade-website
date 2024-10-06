@@ -1,8 +1,8 @@
 ---
-import { Picture } from "astro:assets";
-import heroImage from "assets/hero.png";
-import Link from "@components/ui/link.astro";
-import { Icon } from "astro-icon/components";
+import { Picture } from "astro:assets"
+import heroImage from "assets/hero.png"
+import Link from "@components/ui/link.astro"
+import { Icon } from "astro-icon/components"
 ---
 
 <main
@@ -20,33 +20,31 @@ import { Icon } from "astro-icon/components";
   <div>
     <h1
       class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Marketing website done with Astro
+      Havade: Your Gateway to Diverse News Perspectives
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Astroship is a starter template for startups, marketing websites & landing
-      pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly
-      create any website with this starter.
+      Bringing you alternative sources, multilingual perspectives, and AI-driven
+      summaries for a complete news experience.
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
-        href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
+        href="/waitlist"
         target="_blank"
         class="flex gap-1 items-center justify-center"
         rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
+        <Icon class="text-white w-5 h-5" name="bx:bxs-user-plus" />
 
-         Download for Free
+        Join the waitlist
       </Link>
       <Link
         size="lg"
         style="outline"
         rel="noopener"
-        href="https://github.com/surjithctly/astroship"
+        href="mailto:hello@havade.tech"
         class="flex gap-1 items-center justify-center"
         target="_blank">
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-         GitHub Repo
+        <Icon class="text-black w-4 h-4" name="bx:bxs-envelope" />
+        Contact Us
       </Link>
     </div>
   </div>
