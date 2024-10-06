@@ -1,31 +1,26 @@
 ---
-import { SEO } from "astro-seo";
-import Footer from "@components/footer.astro";
-import Navbar from "@components/navbar/navbar.astro";
-import "@fontsource-variable/inter/index.css";
-import '@fontsource-variable/bricolage-grotesque';
-
-
+import { SEO } from "astro-seo"
+import Footer from "@components/footer.astro"
+import Navbar from "@components/navbar/navbar.astro"
+import "@fontsource-variable/inter/index.css"
+import "@fontsource-variable/bricolage-grotesque"
 
 export interface Props {
-  title: string;
+  title: string
 }
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString()
 
-const resolvedImageWithDomain = new URL(
-  "/opengraph.jpg",
-  Astro.site
-).toString();
+const resolvedImageWithDomain = new URL("/opengraph.jpg", Astro.site).toString()
 
-const { title } = Astro.props;
+const { title } = Astro.props
 
 const makeTitle = title
-  ? title + " | " + "Astroship"
-  : "Astroship - Starter Template for Astro with Tailwind CSS";
+  ? title + " | " + "Havade"
+  : "Havade: Your Gateway to Diverse News Perspectives"
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -36,7 +31,8 @@ const makeTitle = title
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      description="Astroship is a starter website template for Astro built with TailwindCSS."
+      description="Bringing you alternative sources, multilingual perspectives, and AI-driven
+      summaries for a complete news experience."
       canonical={canonicalURL}
       twitter={{
         creator: "@surjithctly",
@@ -47,11 +43,11 @@ const makeTitle = title
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Astroship - Starter Template for Astro`,
+          title: `Havade: Your Gateway to Diverse News Perspectives`,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Astroship Homepage Screenshot",
+          alt: "Havade Homepage Screenshot",
         },
       }}
     />
