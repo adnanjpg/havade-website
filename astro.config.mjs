@@ -10,6 +10,6 @@ export default defineConfig({
   integrations: [tailwind(), mdx(), sitemap(), icon()],
   // wailtist -> google.com
   redirects: {
-    "/waitlist": "https://google.com"
+    "/waitlist": "https://havade.substack.com/subscribe",
   }
 });
