@@ -1,7 +1,7 @@
 ---
 draft: false
 name: "Adnan Fahed"
-title: "Co-Founder & Full Stack Developer"
+title: "Co-Founder & Full Stack Engineer"
 avatar: {
     src: "/team/adnan-fahed.webp",
     alt: "Hudayi Asik"
